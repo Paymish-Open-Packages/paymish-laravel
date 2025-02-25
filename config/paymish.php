@@ -9,7 +9,7 @@ return [
     | This is the base URL for the Paymish payment gateway API.
     |
     */
-    'base_url' => env('PAYMISH_BASE_URL', 'https://api.paymish.com'),
+    'base_url' => env('PAYMISH_BASE_URL', 'https://production-api.paymish.com/api/'),
 
     /*
     |--------------------------------------------------------------------------
