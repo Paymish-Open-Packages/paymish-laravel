@@ -17,9 +17,14 @@ class PaymishServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        // Publish config file
         $this->publishes([
             __DIR__.'/../config/paymish.php' => config_path('paymish.php'),
         ], 'config');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                PaymishPublishCommand::class,
+            ]);
+        }
     }
 }
