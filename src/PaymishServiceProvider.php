@@ -3,6 +3,7 @@
 namespace Paymish;
 
 use Illuminate\Support\ServiceProvider;
+use Paymish\Console\Commands\PaymishPublishCommand;
 
 class PaymishServiceProvider extends ServiceProvider
 {
